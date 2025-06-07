@@ -28,7 +28,7 @@ public class KontenerPlyny extends Kontener implements IHazardNotifier {
 
     @Override
     public void hazardNotified(String numerKontenera) {
-        System.out.println("Niebezpieczna sytuacja"+numerKontenera);
+        System.out.println("Niebezpieczna sytuacja "+numerKontenera);
     }
 
     public boolean isCzyNiebezpieczny() {
