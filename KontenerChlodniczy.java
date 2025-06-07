@@ -43,6 +43,12 @@ public class KontenerChlodniczy extends Kontener{
         super.zaladowanieLadunku(masaLadunku);
     }
 
+
+    @Override
+    public String toString() {
+        return "Kontener Chłodniczy\nNumer seryjny: " + numerSeryjny + "\nMasa kontenera: " + (wagaWlasna + masaLadunku);
+    }
+
     public String getTypProduktu() {
         return typProduktu;
     }

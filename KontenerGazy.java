@@ -22,6 +22,11 @@ public class KontenerGazy extends Kontener implements IHazardNotifier {
         System.out.println("Niebezpieczne zdarzenie"+numerKontenera);
     }
 
+    @Override
+    public String toString() {
+        return "Kontener na gazy\nNumer seryjny: " + numerSeryjny + "\nMasa kontenera: " + (wagaWlasna + masaLadunku);
+    }
+
     public double getCisnienie() {
         return cisnienie;
     }

@@ -31,6 +31,11 @@ public class KontenerPlyny extends Kontener implements IHazardNotifier {
         System.out.println("Niebezpieczna sytuacja "+numerKontenera);
     }
 
+    @Override
+    public String toString() {
+        return "Kontener na płyny\nNumer seryjny: " + numerSeryjny + "\nMasa kontenera: " + (wagaWlasna + masaLadunku);
+    }
+
     public boolean isCzyNiebezpieczny() {
         return czyNiebezpieczny;
     }

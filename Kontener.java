@@ -29,6 +29,15 @@ public abstract class Kontener {
         return "KON-"+typLadunku+"-"+licznik++;
     }
 
+    @Override
+    public String toString() {
+        return "Numer seryjny: " + numerSeryjny + "\nMasa kontenera: " + (wagaWlasna + masaLadunku);
+    }
+
+    public double wagaCalkowita(){
+        return (wagaWlasna+masaLadunku);
+    }
+
     public double getMasaLadunku() {
         return masaLadunku;
     }
